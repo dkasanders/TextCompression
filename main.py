@@ -1,16 +1,31 @@
-# This is a sample Python script.
+import sys
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+#Own implementation of a heap for have the elements be ordered such that each element is greater than or equal to its children
+class Heap:
+    #If given a list when initializing, order that list
+    #If the given variable is an element, create an array with just that element.
+    def __init__(self, val):
+        if type(val) == list:
+            this.array = val
+        else:
+            this.array = [val]
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+class Node:
+    def __init__(self, character, frequency):
+        this.character = character
+        this.frequency = frequency
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if len(sys.argv) > 1:
+    open
+    file = open(sys.argv[1], 'r', encoding="utf8")
+    lines = file.readlines()
+    for line in lines:
+        for c in line:
+            print(c)
+
+else:
+    print("Error: No file given")
